@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: languages
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+    publisher-confirms: true
+    port: 5672
+  datasource:
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/rabbitmq?characterEncoding=utf8
+  jpa:
+      database: MYSQL
+      show-sql: true
+      hibernate:
+        naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
